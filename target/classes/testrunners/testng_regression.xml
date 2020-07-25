@@ -5,8 +5,8 @@
 
 	<listeners>
 	
-	 <listener class-name="com.qa.hubspot.testlistners.TesultsListener" />
-		<!--<listener class-name="com.qa.hubspot.testlistners.AllureTestListener" />
+	 <!--<listener class-name="com.qa.hubspot.testlistners.TesultsListener" />
+		<listener class-name="com.qa.hubspot.testlistners.AllureTestListener" />
 		  <listener class-name="com.qa.hubspot.testlistners.ExtentReportListener" />
 		     <listener class-name="com.qa.hubspot.testlistners.pdfListener" />-->
 	
@@ -19,11 +19,11 @@
 		       </classes>
 	</test>
 	
-	  <test name="HubSpot HomPage Testing">
+	 <!-- <test name="HubSpot HomPage Testing">
 		<classes>
 			<class name="com.qa.hubspot.tests.HomePageTest" />
 				</classes>
-	</test>
+	</test>-->
 
 
 </suite>
