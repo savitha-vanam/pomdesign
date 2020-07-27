@@ -14,19 +14,23 @@ import io.qameta.allure.Feature;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 
-@Epic("Epic - 101 :design loginpage features...")
-@Feature("US - 201: desig loginpage signup,loginpage title and login with modules...")
-@Listeners(AllureReport.class)
+//@Epic("Epic - 101 :design loginpage features...")
+//@Feature("US - 201: design loginpage signup,loginpage title and login with modules...")
+//@Listeners(AllureReport.class)
 public class LoginPageTest extends BasePageTest {
+	
 	@Description("verify signup link on loginpage")
 	@Severity(SeverityLevel.CRITICAL)
+	
 	@Test(priority=1)
 	public void verifySignUpLinkTest() {
 		boolean flag=loginpage.getSignUpLinkExist();
 		Assert.assertEquals(flag, true);	
 	}
+	
 	@Description("verify loginpage title on loginpage")
 	@Severity(SeverityLevel.NORMAL)
+	
 	@Test(priority=2)
 	public void verifygetLoginPageTitle() {
 		String title=loginpage.getLoginPageTitle();
@@ -35,6 +39,7 @@ public class LoginPageTest extends BasePageTest {
 	}
 	@Description("verify user is able to loginpage")
 	@Severity(SeverityLevel.MINOR)
+	
 	@Test(priority=3)
 	public void doLogin(){
 		loginpage.doLogin(prop.getProperty("username"),prop.getProperty("password"));
