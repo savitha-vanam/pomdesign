@@ -14,9 +14,9 @@ import io.qameta.allure.Feature;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 
-//@Epic("Epic - 101 :design loginpage features...")
-//@Feature("US - 201: design loginpage signup,loginpage title and login with modules...")
-//@Listeners(AllureReport.class)
+@Epic("Epic - 101 :design loginpage features...")
+@Feature("US - 201: design loginpage signup,loginpage title and login with modules...")
+@Listeners(AllureReport.class)
 public class LoginPageTest extends BasePageTest {
 	
 	@Description("verify signup link on loginpage")
